@@ -1,0 +1,98 @@
+body {
+    height: 95vh;
+    background: #303636;
+}
+
+
+.calculator {
+    display: grid;
+    place-content: center;
+    height: 100%;
+}
+
+.calculator-head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.calculator-head h2 {
+    margin: 0 0 10px;
+    width: 100%;
+}
+
+.calculator-head .c-input:disabled{
+    background: lightgray;
+    color: black;
+    font-size: 24px;
+    height: 50px;
+    margin: 0;
+}
+
+.calculator-head .clear-btn{
+    flex-grow: 1;
+    cursor: pointer;
+    color: darkred;
+
+}
+
+.calculator > .calculator-section {
+    background: #2e2b2b;
+    color: white;
+    padding: 1.5rem;
+    width: 400px;
+    height: 450px;
+}
+
+.calculator-section > header {
+    height: 30%;
+}
+
+.calculator-section > main {
+    height: 70%;
+}
+
+.calculator-section > main section{
+    height: 100%;
+}
+
+.calculator-section > main section article{
+    height: 100%;
+}
+
+.c-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.c-buttons > button {
+    width: 100%;
+    color: white;
+    background: brown;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.fill {
+    grid-column: span 2;
+}
+
+.c-buttons > button:hover {
+    background: darkred;
+}
+
+.c-numbers {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 63%;
+    gap: 5px;
+}
+
+.c-functions {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 37%;
+    gap: 5px;
+}
