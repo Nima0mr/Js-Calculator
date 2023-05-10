@@ -17,6 +17,7 @@ const addNumbersToCalculator = () => {
             </button>
         </div>`
     })
+    console.log('hello')
 }
 
 const addFunctionsToCalculator = () => {
